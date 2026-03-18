@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Skytage",
+    "version": "1.0",
+    "author": "Can Yoleri",
+    "description": "Detects and stores cloud storage domains from visited websites",
+    "permissions": [
+      "storage",
+      "webRequest"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }],
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
