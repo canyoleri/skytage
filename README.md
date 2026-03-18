@@ -53,6 +53,3 @@ Skytage detects cloud storage URLs from multiple sources:
 3. **Network requests** — All browser requests intercepted via `chrome.webRequest`, including XHR, fetch, and lazy-loaded resources
 4. **DNS CNAME lookups** — External hostnames on the page are checked against Google DNS-over-HTTPS for CNAME records pointing to cloud storage
 
-## License
-
-MIT
